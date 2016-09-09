@@ -4,7 +4,7 @@ num_class = int(input("Enter the number of courses to be scheduled:\n"))
 inputs = []
 #record the courses to be scheduled
 for i in range(0, num_class):
-        inputs.append(raw_input())
+        inputs.append(raw_input("Class number "+str(i)+": " ))
 def plan(outputs, slots, cursor, no_of_section):
         #finished
         if cursor == num_class * 3:
